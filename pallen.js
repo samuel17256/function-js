@@ -1,6 +1,16 @@
-
-
-
+//pallendrome
+function palindrome(string) {
+    let reversedString = "";
+    for (let i = string.length - 1; i >= 0; i--) {
+        reversedString += string[i];
+    }
+    if (string === reversedString) {
+        console.log("This is a palindrome");
+    } else {
+        console.log("This is not a palindrome");
+    }
+}
+palindrome("nurse");
 
 // Function to find the largest number
 function findLargestNumber(numbers) {
@@ -43,16 +53,36 @@ function countVowels(string) {
 }
 //  countVowels("stephanie"); 
 
+//function to fine prime numbers
+function primeNumber(num) {
+    for (let i = 1; i < num; i++) {
+        if (num % i === 0 && num <= 1) {
+            num = false;
+            console.log(num)    
+            return false;
+    } else{
+        num = true;
+        console.log(num)
+    }
+    return true;
+}
+}
+// primeNumber(5)
 
-
-
-
-
-
-
-
-
-
+//function to merge two arrays
+let a=["a", "c", "b"]   
+let b=["d", "i", "l"]
+function mergeArray(a, b){
+    let newArray = [];
+    for(let i=0; i<a.length; i++){
+        newArray.push(a[i]);
+    }
+    for(let j=0; j<b.length; j++){
+        newArray.push(b[j]);
+    }
+    console.log(newArray.sort());
+}
+// mergeArray(a, b)
 
 //function find the index of numbers
 let myArray=[1,2,3,4,5,6]
