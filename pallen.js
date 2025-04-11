@@ -54,35 +54,43 @@ function countVowels(string) {
 //  countVowels("stephanie"); 
 
 //function to fine prime numbers
-function primeNumber(num) {
-    for (let i = 1; i < num; i++) {
-        if (num % i === 0 && num <= 1) {
-            num = false;
-            console.log(num)    
-            return false;
-    } else{
-        num = true;
-        console.log(num)
+function isPrime(num){
+    for (let i = 2; i * i <= num; i++) {
+        if (num % i === 0) {
+          return false;
+        }
+      }
+      return true;
     }
-    return true;
-}
-}
-// primeNumber(5)
+    
+    console.log(isPrime(2))
+
 
 //function to merge two arrays
-let a=["a", "c", "b"]   
-let b=["d", "i", "l"]
-function mergeArray(a, b){
-    let newArray = [];
-    for(let i=0; i<a.length; i++){
-        newArray.push(a[i]);
-    }
-    for(let j=0; j<b.length; j++){
-        newArray.push(b[j]);
-    }
-    console.log(newArray.sort());
-}
-// mergeArray(a, b)
+
+    // function mergeAndSort(array1, array2, order = 'ascending') {
+    //     const mergedArray = [...array1, ...array2];
+    //     mergedArray.sort((a, b) => {
+    //       if (order === 'ascending') {
+    //         return a - b; 
+    //       } else {
+    //         return b - a; 
+    //       }
+    //     });
+    //     return mergedArray;
+    //   }
+      
+      
+    //   const array1 = [1, 3, 5];
+    //   const array2 = [2, 4, 6];
+      
+      
+    //   const ascendingSortedArray = mergeAndSort(array1, array2);
+    //   console.log("Ascending:", ascendingSortedArray);
+      
+      
+    //   const descendingSortedArray = mergeAndSort(array1, array2, 'descending');
+    //   console.log("Descending:", descendingSortedArray);
 
 //function find the index of numbers
 let myArray=[1,2,3,4,5,6]
@@ -92,6 +100,21 @@ function findIndex(){
     }
 }
 // findIndex(myArray)
+
+//find multiples
+    // function multiplesOf(numbers, number) { 
+    //     let multiples = [];
+    //     for (let i = 0; i < numbers.length; i++) {
+    //       if (numbers[i] % number === 0) { 
+    //         multiples.push(numbers[i]); 
+    //       }
+    //     }
+      
+    //     return multiples;
+    //   }
+      
+    //   console.log(multiplesOf([4, 5, 6, 7, 8], 2)); 
+
 
 
 // savings
