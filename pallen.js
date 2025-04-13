@@ -20,17 +20,14 @@ function findLargestNumber(numbers) {
             largest=numbers[i];
         }
     }
-    return largest;
+    console.log(largest);
 }
 let number = [1, 2, 1000, 3, -1];
-let largestNumber = findLargestNumber(number);
-// console.log(largestNumber);
-
+findLargestNumber(number)
 
 //function sum of numbers in an array
 // let array  = [0,2,4,6,8,10,12]
 // let output = 0
-
 // function getSumOfArrayNumbers(sum) {
 
 //     for (let i=0;i<array.length;i++) {
@@ -49,7 +46,7 @@ function calculateFactoria(number) {
     console.log(factoria) 
 }
 
-calculateFactoria(5)
+// calculateFactoria(5)
 
 //function count Vowels
 function countVowels(string) {
@@ -64,7 +61,7 @@ function countVowels(string) {
     }
     console.log(result)
 }
- countVowels("stephanie"); 
+//  countVowels("stephanie"); 
 
 //function to fine prime numbers
 function isPrime(num){
