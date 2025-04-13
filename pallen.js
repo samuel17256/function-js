@@ -10,7 +10,7 @@ function palindrome(string) {
         console.log("This is not a palindrome");
     }
 }
-palindrome("nurse");
+// palindrome("nurse");
 
 // Function to find the largest number
 function findLargestNumber(numbers) {
@@ -27,6 +27,19 @@ let largestNumber = findLargestNumber(number);
 // console.log(largestNumber);
 
 
+//function sum of numbers in an array
+// let array  = [0,2,4,6,8,10,12]
+// let output = 0
+
+// function getSumOfArrayNumbers(sum) {
+
+//     for (let i=0;i<array.length;i++) {
+//         output += array[i]
+//         console.log(output)
+//         }
+// }
+// getSumOfArrayNumbers(array)
+
 //function factoria
 function calculateFactoria(number) {
     let factoria = 1;
@@ -36,7 +49,7 @@ function calculateFactoria(number) {
     console.log(factoria) 
 }
 
-// calculateFactoria(5)
+calculateFactoria(5)
 
 //function count Vowels
 function countVowels(string) {
@@ -49,9 +62,9 @@ function countVowels(string) {
             }
         }
     }
-    // console.log(result)
+    console.log(result)
 }
-//  countVowels("stephanie"); 
+ countVowels("stephanie"); 
 
 //function to fine prime numbers
 function isPrime(num){
@@ -63,7 +76,7 @@ function isPrime(num){
       return true;
     }
     
-    console.log(isPrime(2))
+    // console.log(isPrime(2))
 
 
 //function to merge two arrays
